@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Grid</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+  <!-- DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-[#1D2254] text-white font-manrope min-h-screen p-6">
+
+  <!-- Dark Mode Toggle -->
+  <button onclick="document.documentElement.classList.toggle('dark')" class="btn btn-primary mb-6">
+    Toggle Dark Mode
+  </button>
+
+  <!-- Flex Container -->
+  <div class="flex flex-col lg:flex-row gap-0"> <!-- Reduced gap to zero here -->
+
+    <!-- Left Side -->
+    <div class="flex flex-col gap-4 w-full lg:w-1/2">
+
+      <!-- Profile Card -->
+      <div class="pl-[15px]"> <!-- Reduced padding to make it more compact -->
+        <div class="card bg-base-100 w-96 shadow-sm dark:bg-gray-800 text-base-content dark:text-white">
+          <figure class="px-10 pt-10">
+            <div>
+              <h1 class="text-[#6A24FF] font-manrope text-[30px] pb-[20px]">Kristin Watson</h1>
+              <div class="avatar pb-[20px]">
+                <div class="bg-neutral text-neutral-content w-[180px] h-[180px] rounded-full overflow-hidden">
+                  <img src="girl.png" alt="Kristin Watson" class="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
+          </figure>
+          <div class="space-y-2 pl-[60px] pb-6"> <!-- Reduced left padding -->
+            <div class="flex justify-between w-[200px]"><h2 class="text-[#A3A3A3] text-[13px]">AGE</h2><h2 class="text-black text-[13px] dark:text-white">27</h2></div>
+            <div class="flex justify-between w-[200px]"><h2 class="text-[#A3A3A3] text-[13px]">Education</h2><h2 class="text-black text-[13px] dark:text-white">Masters in Business</h2></div>
+            <div class="flex justify-between w-[200px]"><h2 class="text-[#A3A3A3] text-[13px]">Status</h2><h2 class="text-black text-[13px] dark:text-white">Single</h2></div>
+            <div class="flex justify-between w-[200px]"><h2 class="text-[#A3A3A3] text-[13px]">Occupation</h2><h2 class="text-black text-[13px] dark:text-white">Sales Manager</h2></div>
+            <div class="flex justify-between w-[200px]"><h2 class="text-[#A3A3A3] text-[13px]">Tech literate</h2><h2 class="text-black text-[13px] dark:text-white">High</h2></div>
+            <div class="flex justify-between w-[200px]"><h2 class="text-[#A3A3A3] text-[13px]">Location</h2><h2 class="text-black text-[13px] dark:text-white">Sydney</h2></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medium Button Card -->
+      <div class="pl-[15px]"> <!-- Reduced padding here too -->
+        <div class="card w-[380px] bg-base-100 shadow-sm dark:bg-gray-800 text-base-content dark:text-white">
+          <div class="card-body">
+            <div class="flex gap-[20px]">
+              <img src="prp-eye.png" alt="" class="w-[25px] h-[22px]">
+            <p>I am used to with online service and I usually do my online shopping from Instagram.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personality Card -->
+      <div class="pl-[15px]"> <!-- Reduced padding -->
+        <div class="card w-96 bg-base-100 shadow-sm dark:bg-gray-800 text-base-content dark:text-white">
+          <div class="card-body">
+            <h2 class="card-title">Personality</h2>
+            <div class="grid grid-cols-2 gap-2 pt-2">
+              <div class="badge badge-ghost text-xs px-2 py-1">Introvert</div>
+              <div class="badge badge-ghost text-xs px-2 py-1">Thinker</div>
+              <div class="badge badge-ghost text-xs px-2 py-1">Spender</div>
+              <div class="badge badge-ghost text-xs px-2 py-1">Tech-savvy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="w-full lg:w-1/2 flex flex-col gap-4">
+
+      <!-- Medium Card 1 -->
+      <div class="card w-full bg-base-100 shadow-sm dark:bg-gray-800 text-base-content dark:text-white">
+        <div class="card-body">
+          <h2 class="card-title">Bio</h2>
+          <p>She currently lives in Sydney. She finished her master in business and has just been promoted to Sales Manager. She is currently single and likes to go out with friends on long holidays.</p>
+        </div>
+      </div>
+
+      <!-- Medium Card 2 -->
+      <div class="card w-full bg-base-100 shadow-sm dark:bg-gray-800 text-base-content dark:text-white">
+        <div class="card-body">
+          <h2 class="card-title">Core needs</h2>
+          <p>• Find skilled people to tackle goals</p>
+          <p>• Overview of hirings</p>
+          <p>• Pricing is important</p>
+        </div>
+      </div>
+
+      <!-- Medium Card 3 -->
+      <div class="card w-full bg-base-100 shadow-sm dark:bg-gray-800 text-base-content dark:text-white">
+        <div class="card-body">
+          <h2 class="card-title">Frustrations</h2>
+          <p>• Price is high compared to value</p>
+          <p>• Tedious process using personal network</p>
+          <p>• Limited comparison options</p>
+        </div>
+      </div>
+
+      <!-- Medium Card 4 -->
+      <div class="card w-full bg-base-100 shadow-sm dark:bg-gray-800 text-base-content dark:text-white">
+        <div class="card-body">
+          <h2 class="card-title">BRANDS</h2>
+          <img src="Brands.png" alt="">
+        </div>
+      </div>
+
+      <!-- Two Small Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <!-- Small Card 1 -->
+        <div class="card bg-base-100 shadow-sm dark:bg-gray-800 text-base-content dark:text-white">
+          <div class="card-body">
+            <h2 class="card-title">Payment medium</h2>
+            <img src="Frame 1.png" alt="">
+          </div>
+        </div>
+
+        <!-- Small Card 2 -->
+        <div class="card bg-base-100 shadow-sm dark:bg-gray-800 text-base-content dark:text-white">
+          <div class="card-body">
+            <h2 class="card-title">Platform</h2>
+            <img src="Frame 2.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
